@@ -19,9 +19,7 @@ Each folder is a separate Flutter project. Open the required project folder in y
 git clone https://github.com/JohnGerges20/shopping_app_assignmen.git
 ```
 
-### 2. Open a project
-
-For the Shopping App:
+### 2. Open the Shopping App project
 
 ```bash
 cd shopping_app_assignmen/full_shopping_app
@@ -43,9 +41,25 @@ flutter run
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home Screen
+
+![Home Screen](screenshots/Home.png)
+
+### 🔐 Login Screen
+
+![Login Screen](screenshots/login.png)
+
+### 📝 Signup Screen
+
+![Signup Screen](screenshots/signup.png)
+
+---
+
 ## 👨‍💻 Author
 
 **John Gerges**
 
 - GitHub: [JohnGerges20](https://github.com/JohnGerges20)
-- Email: johngwanes@gmail.com
+- Email: [johngwanes@gmail.com](mailto:johngwanes@gmail.com)
