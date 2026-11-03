@@ -1,25 +1,31 @@
-import 'package:flutter/material.dart' ;
+
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-class HomePage extends StatefulWidget{
+import 'test.dart';
+
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   State<HomePage> createState() {
-    return HomePageState() ;
+    return _HomePageState();
   }
 }
 
-class HomePageState extends State<HomePage>{
+// The underscore (_) makes this State class private to this file.
+// State classes should be private because they are implementation details
+// of their corresponding widgets.
 
+class _HomePageState extends State<HomePage> {
   @override
   void initState() {
-    print(" start Home");
-    // TODO: implement initState
     super.initState();
+    print(" start Home");
   }
 
   @override
   void dispose() {
     print(" finish Home");
-    // TODO: implement dispose
     super.dispose();
   }
 
@@ -27,13 +33,18 @@ class HomePageState extends State<HomePage>{
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child:
-        Column(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("welcome to Home Page"),
-            ElevatedButton(onPressed: (){
-              context.pop() ;
-            }, child: Text("go back"))
+            const Text("welcome to Home Page"),
+            ElevatedButton(
+              onPressed: () {
+                // Log out and navigate back to the login page.
+                Database.isLoggedIn = false;
+                context.go("/login");
+              },
+              child: const Text("go back"),
+            ),
           ],
         ),
       ),

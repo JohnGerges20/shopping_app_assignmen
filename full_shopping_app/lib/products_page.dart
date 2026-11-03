@@ -1,25 +1,29 @@
-import 'package:flutter/material.dart' ;
+
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-class ProductsPage extends StatefulWidget{
+
+class ProductsPage extends StatefulWidget {
+  const ProductsPage({super.key});
+
   @override
   State<ProductsPage> createState() {
-    return ProductsPageState() ;
+    return _ProductsPageState();
   }
 }
 
-class ProductsPageState extends State<ProductsPage>{
+// The underscore (_) makes this State class private to this file.
+// State classes are implementation details of their widgets.
 
+class _ProductsPageState extends State<ProductsPage> {
   @override
   void initState() {
-    print(" start Products");
-    // TODO: implement initState
     super.initState();
+    print(" start Products");
   }
 
   @override
   void dispose() {
     print(" finish Products");
-    // TODO: implement dispose
     super.dispose();
   }
 
@@ -27,13 +31,16 @@ class ProductsPageState extends State<ProductsPage>{
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child:
-        Column(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("welcome to Products Page"),
-            ElevatedButton(onPressed: (){
-              context.pop();
-            }, child: Text("go back"))
+            const Text("welcome to Products Page"),
+            ElevatedButton(
+              onPressed: () {
+                context.pop();
+              },
+              child: const Text("go back"),
+            ),
           ],
         ),
       ),
