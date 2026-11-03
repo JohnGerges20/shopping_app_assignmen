@@ -45,16 +45,15 @@ flutter run
 
 ### 🏠 Home Screen
 
-![Home Screen](screenshots/Home.png)
+![Home Screen](full_shopping_app/Screenshots/Home.png)
 
 ### 🔐 Login Screen
 
-![Login Screen](screenshots/login.png)
+![Login Screen](full_shopping_app/Screenshots/login.png)
 
 ### 📝 Signup Screen
 
-![Signup Screen](screenshots/signup.png)
-
+![Signup Screen](full_shopping_app/Screenshots/signup.png)
 ---
 
 ## 👨‍💻 Author
